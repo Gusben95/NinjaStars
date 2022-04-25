@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function ShowAllBooks() {
     const allBooks = books;
     const bookList = allBooks.map((book) => 
-        <li>{book.title}<br/>{book.author}<br/><br/></li>
+        <Link to={`/book/${book.id}`}><li>{book.title}<br/>{book.author}<br/><br/></li></Link>
     );
 
     return (
