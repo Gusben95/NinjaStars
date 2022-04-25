@@ -4,4 +4,5 @@
 
 
 > Variabler camelCase
+
 > Funktioner Börjamedstorbokstav
