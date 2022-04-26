@@ -11,7 +11,6 @@ function ShowAllBooks() {
 
     return (
         <section>
-            <h2>Alla våra böcker</h2>
             <ul className="booksContainer">
                 {bookList}
             </ul>
