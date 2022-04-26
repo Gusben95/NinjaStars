@@ -1,0 +1,11 @@
+.booksContainer {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);   
+}
+
+.oneBook {
+    background-color: rgba(1, 63, 16, 0.322);
+    height: 150px;
+    border-radius: 5px;
+}
