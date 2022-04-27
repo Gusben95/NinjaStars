@@ -1,11 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
+import { Routes, Route } from 'react-router-dom';
+
+
+import ShowAllBooks from './Components/Books';
+import SelectedBook from './Components/SelectedBook'
+import NewBooks from './views/newbooks.js'
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <header>
+        <h1>Detta är Örkelljunga bibliotek</h1>
+      </header>
+      <Routes>
+        <Route path="/newbooks" element={<NewBooks/>} ></Route>
+        <Route path="/" element={<ShowAllBooks />} />
+        <Route path="/book/:id" element={<SelectedBook />} />
+      </Routes>
     </div>
   );
 }
